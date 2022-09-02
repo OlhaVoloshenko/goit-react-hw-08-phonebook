@@ -30,7 +30,7 @@ const RegisterView = () => {
 
       dispatch(setCredentials(user));
     } catch (error) {
-      console.log('Oh no, there was an register error!', error);
+      console.log('There was an register error!', error);
     }
 
     setFormState({

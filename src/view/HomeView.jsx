@@ -4,10 +4,10 @@ const HomeView = () => {
   return (
     <>
       <Typography align="center" variant="h3" component="h1">
-        Welcome to Aphonka
+        Welcome to HomePage
       </Typography>
       <Typography align="center" variant="h5" component="h1">
-        online phonebook app
+        This app is for adding contacts
       </Typography>
     </>
   );
