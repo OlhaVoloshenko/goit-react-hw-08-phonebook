@@ -14,7 +14,7 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import SupportAgentIcon from '@mui/icons-material/SupportAgent';
+import AdbIcon from '@mui/icons-material/Adb';
 
 import { selectIsLoggedIn, selectUser } from 'Redux/authSlice';
 import AuthBar from 'components/AuthBar';
@@ -46,9 +46,7 @@ const NavBar = () => {
     <AppBar position="relative">
       <Container maxWidth="sm">
         <Toolbar disableGutters>
-          <SupportAgentIcon
-            sx={{ display: { xs: 'none', sm: 'flex' }, mr: 1 }}
-          />
+          <AdbIcon sx={{ display: { xs: 'none', sm: 'flex' }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
@@ -64,7 +62,7 @@ const NavBar = () => {
               textDecoration: 'none',
             }}
           >
-            Aphonka
+            LOGO
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', sm: 'none' } }}>
@@ -144,9 +142,7 @@ const NavBar = () => {
               )}
             </Menu>
           </Box>
-          <SupportAgentIcon
-            sx={{ display: { xs: 'flex', sm: 'none' }, mr: 1 }}
-          />
+          <AdbIcon sx={{ display: { xs: 'flex', sm: 'none' }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
@@ -163,7 +159,7 @@ const NavBar = () => {
               textDecoration: 'none',
             }}
           >
-            Aphonka
+            LOGO
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', sm: 'flex' } }}>
             <Button
