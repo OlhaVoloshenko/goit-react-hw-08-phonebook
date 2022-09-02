@@ -44,7 +44,7 @@ const NavBar = () => {
 
   return (
     <AppBar position="relative">
-      <Container maxWidth="sm">
+      <Container maxWidth="lg">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', sm: 'flex' }, mr: 2 }} />
           <Typography
@@ -53,7 +53,7 @@ const NavBar = () => {
             component={Link}
             to="/"
             sx={{
-              mr: 2,
+              mr: 24,
               display: { xs: 'none', sm: 'flex' },
               fontFamily: 'monospace',
               fontWeight: 700,
