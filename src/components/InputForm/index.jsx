@@ -6,12 +6,11 @@ import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import FormControl from '@mui/material/FormControl';
 
-const patternNumber =
+const blockNumber =
   '^\\+?\\d{1,4}?[-.\\s]?\\(?\\d{1,3}?\\)?[-.\\s]?\\d{1,4}[-.\\s]?\\d{1,4}[-.\\s]?\\d{1,9}$';
-const patternName =
-  "^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$";
-const regexName = new RegExp(patternName);
-const regexNumber = new RegExp(patternNumber);
+const blockName = "^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$";
+const regName = new RegExp(blockName);
+const regNumber = new RegExp(blockNumber);
 
 export const ContactForm = () => {
   const [name, setName] = useState('');
@@ -25,11 +24,11 @@ export const ContactForm = () => {
     switch (name) {
       case 'name':
         setName(value);
-        setvalidName(regexName.test(value));
+        setvalidName(regName.test(value));
         break;
       case 'number':
         setNumber(value);
-        setValidNumber(regexNumber.test(value));
+        setValidNumber(regNumber.test(value));
         break;
 
       default:
