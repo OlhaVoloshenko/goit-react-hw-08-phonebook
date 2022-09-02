@@ -44,7 +44,7 @@ export const ContactForm = () => {
     if (!validName || !validNumber) return;
 
     if (!name.trim() || !number.trim()) {
-      alert(`Empty filed. Enter smomething.`);
+      alert(`Empty field. Enter smomething.`);
       return;
     }
 

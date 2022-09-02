@@ -8,7 +8,7 @@ const AuthBar = ({ handleCloseNavMenu }) => {
     <>
       <Button
         onClick={handleCloseNavMenu}
-        sx={{ my: 2, color: 'white', display: 'block' }}
+        sx={{ my: 4, color: 'white', display: 'block' }}
       >
         <Link to="login" style={{ textDecoration: 'none', color: '#fff' }}>
           Login
