@@ -6,8 +6,8 @@ import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import FormControl from '@mui/material/FormControl';
 
-import { useLoginMutation } from 'Redux/authApi';
-import { setCredentials } from 'Redux/authSlice';
+import { useLoginMutation } from 'redux/authApi';
+import { setCredentials } from 'redux/authSlice';
 
 const LoginView = () => {
   const [formState, setFormState] = useState({
@@ -30,7 +30,7 @@ const LoginView = () => {
 
       dispatch(setCredentials(respData));
     } catch (error) {
-      console.log('Oh no, there was an login error!', error);
+      console.log('There was an login error!', error);
     }
 
     setFormState({

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { useSignupMutation } from 'Redux/authApi';
-import { setCredentials } from 'Redux/authSlice';
+import { useSignupMutation } from 'redux/authApi';
+import { setCredentials } from 'redux/authSlice';
 
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { useSelector, useDispatch } from 'react-redux';
 import Input from '@mui/material/Input';
 import SearchIcon from '@mui/icons-material/Search';
-import { filterContacts } from 'Redux/filterAction';
+import { filterContacts } from 'redux/filterAction';
 
 export const Filter = () => {
   const filter = useSelector(state => state.contacts.filter);

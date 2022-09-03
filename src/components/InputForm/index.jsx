@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useAddContactMutation, useGetContactsQuery } from 'Redux/contactsApi';
+import { useAddContactMutation, useGetContactsQuery } from 'redux/contactsApi';
 
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';

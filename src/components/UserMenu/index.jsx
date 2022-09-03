@@ -1,8 +1,8 @@
 import { useDispatch, useSelector } from 'react-redux';
 
-import { useLogoutMutation } from 'Redux/authApi';
-import { selectUser, unsetCredentials } from 'Redux/authSlice';
-import { contactsApi } from 'Redux/contactsApi';
+import { useLogoutMutation } from 'redux/authApi';
+import { selectUser, unsetCredentials } from 'redux/authSlice';
+import { contactsApi } from 'redux/contactsApi';
 
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
