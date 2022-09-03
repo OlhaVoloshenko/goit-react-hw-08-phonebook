@@ -10,8 +10,8 @@ import LoginView from 'view/LoginView';
 import RegisterView from 'view/RegisterView';
 import ContactsView from 'view/ContactsView';
 
-import { useCurrentUserQuery } from 'redux/authApi';
-import { selectToken } from 'redux/authSlice';
+import { useCurrentUserQuery } from 'Redux/authApi';
+import { selectToken } from 'Redux/authSlice';
 
 import { CssBaseline } from '@mui/material';
 

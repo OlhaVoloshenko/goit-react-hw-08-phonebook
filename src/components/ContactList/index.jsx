@@ -1,6 +1,6 @@
 import { ContactItem } from 'components/ContactItem/index';
 import List from '@mui/material/List';
-import { useGetContactsQuery } from 'redux/contactsApi';
+import { useGetContactsQuery } from 'Redux/contactsApi';
 import { useSelector } from 'react-redux';
 
 export const ContactList = () => {

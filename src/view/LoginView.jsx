@@ -6,8 +6,8 @@ import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import FormControl from '@mui/material/FormControl';
 
-import { useLoginMutation } from 'redux/authApi';
-import { setCredentials } from 'redux/authSlice';
+import { useLoginMutation } from 'Redux/authApi';
+import { setCredentials } from 'Redux/authSlice';
 
 const LoginView = () => {
   const [formState, setFormState] = useState({

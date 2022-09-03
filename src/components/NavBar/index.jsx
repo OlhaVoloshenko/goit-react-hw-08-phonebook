@@ -16,7 +16,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
-import { selectIsLoggedIn, selectUser } from 'redux/authSlice';
+import { selectIsLoggedIn, selectUser } from 'Redux/authSlice';
 import AuthBar from 'components/AuthBar';
 import UserMenu from 'components/UserMenu';
 
