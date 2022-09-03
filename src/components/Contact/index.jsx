@@ -10,7 +10,7 @@ import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
 
 export const Contact = ({ name, number, id }) => {
-  const [deleteContact, { isLoading }] = useDeleteContactMutation();
+  const [deleteContactId, { isLoading }] = useDeleteContactMutation();
   return (
     <ListItem>
       <ListItemButton>
@@ -23,7 +23,7 @@ export const Contact = ({ name, number, id }) => {
         <IconButton
           type="button"
           disabled={isLoading}
-          onClick={() => deleteContact(id)}
+          onClick={() => deleteContactId(id)}
         >
           Delete
           <DeleteIcon />
@@ -35,6 +35,6 @@ export const Contact = ({ name, number, id }) => {
 
 Contact.propTypes = {
   name: PropTypes.string.isRequired,
-  number: PropTypes.string.isRequired,
+  number: PropTypes.string,
   id: PropTypes.string.isRequired,
 };
