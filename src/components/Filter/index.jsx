@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import Input from '@mui/material/Input';
 import SearchIcon from '@mui/icons-material/Search';
-import { filterItems } from '../../Redux/filterAction';
+import { filterItems } from 'Redux/filterAction';
 
 export const Filter = () => {
   const filter = useSelector(state => state.filter);

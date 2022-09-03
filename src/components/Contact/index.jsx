@@ -9,7 +9,7 @@ import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
 
-export const ContactItem = ({ name, number, id }) => {
+export const Contact = ({ name, number, id }) => {
   const [deleteContact, { isLoading }] = useDeleteContactMutation();
   return (
     <ListItem>
@@ -33,7 +33,7 @@ export const ContactItem = ({ name, number, id }) => {
   );
 };
 
-ContactItem.propTypes = {
+Contact.propTypes = {
   name: PropTypes.string.isRequired,
   number: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
